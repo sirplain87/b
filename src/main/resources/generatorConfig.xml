@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <classPathEntry location="/Users/yanzhao/Downloads/mysql-connector-java/mysql-connector-java-5.1.26/mysql-connector-java-5.1.26-bin.jar"></classPathEntry>
+    <context id="mygenerator" defaultModelType="flat" targetRuntime="MyBatis3Simple">
+        <jdbcConnection
+                driverClass="com.mysql.jdbc.Driver"
+                connectionURL="jdbc:mysql://123.57.59.230:3306/datacenter"
+                userId="root"
+                password="root"></jdbcConnection>
+        <javaModelGenerator
+                targetPackage="com.springapp.mvc.model" targetProject="/Users/yanzhao/untitled1/src/main/java" >
+        </javaModelGenerator>
+        <sqlMapGenerator targetPackage="mybatis/mapper" targetProject="/Users/yanzhao/untitled1/src/main/resources"></sqlMapGenerator>
+
+        <table tableName="fivem"></table>
+        <!--<table tableName="price"></table>-->
+        <!--<table tableName="basedata"></table>-->
+        <!--<table tableName="owns"/>-->
+        <!--<table tableName="trade"/>-->
+        <!--<table tableName="userid"/>-->
+    </context>
+</generatorConfiguration>
